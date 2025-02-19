@@ -20,6 +20,8 @@ public class UserService {
 	}
 
 	public User registerUser(User user) {
+		user.setRole("faculty");
+
 		return dao.registerUser(user);
 	}
 
